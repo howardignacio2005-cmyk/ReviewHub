@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReviewHub</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">ReviewHub</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="rankings.html">Rankings</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+    <button id="themeToggle" aria-label="Toggle color theme">Dark</button>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">Review, rank, compare, decide</p>
+        <h1>Find the best products before you buy</h1>
+        <p>Compare specs, trend movement, buyer logs, and editorial verdicts across tech, audio, wearables, lifestyle, and home portals.</p>
+
+        <div class="search-box">
+            <input id="searchInput" type="search" placeholder="Search by product, category, spec, or feature...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="suggestions" class="suggestions" hidden></div>
+
+        <div class="filters" aria-label="Product categories">
+            <button class="active" data-filter="All">All</button>
+        </div>
+        <div class="brand-filter-row" data-brand-filters aria-label="Product brands"></div>
+
+        <p class="timestamp">Live local time: <span data-current-time></span></p>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container stat-grid" data-portal-stats></div>
+</section>
+
+<section class="featured" id="results">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">Search Results</h2>
+            <p data-result-count></p>
+        </div>
+        <p class="empty-results" data-empty-results hidden>No products match your search yet.</p>
+        <div class="product-grid" data-product-grid></div>
+    </div>
+</section>
+
+<section class="recommended-panel">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">Recommended To Buy</h2>
+            <p>Top picks based on score, review volume, trend, and value.</p>
+        </div>
+        <div class="recommend-grid" data-recommended-list></div>
+    </div>
+</section>
+
+<section class="trend-panel">
+    <div class="container">
+        <h2 class="section-title">Trend Watch</h2>
+        <ol data-trending-list></ol>
+    </div>
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

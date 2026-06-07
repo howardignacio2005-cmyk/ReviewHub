@@ -1,0 +1,57 @@
+.compare-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 12px;
+  margin: 26px 0;
+}
+
+.compare-controls select,
+.compare-controls button {
+  min-height: 48px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  padding: 0 14px;
+}
+
+.compare-controls select {
+  background: var(--panel);
+  color: var(--text);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background: var(--panel-strong);
+  color: var(--text);
+}
+
+td:first-child {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .compare-controls {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

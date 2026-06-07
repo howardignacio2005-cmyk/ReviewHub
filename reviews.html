@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">ReviewHub</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="rankings.html">Rankings</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+    <button id="themeToggle" aria-label="Toggle color theme">Dark</button>
+</nav>
+
+<main class="page-shell">
+    <h1>Latest Buyer Reviews</h1>
+    <p class="page-intro">Timestamped local buyer logs plus clickable external review sources from public review websites.</p>
+    <section class="community-hub">
+        <div class="section-heading compact-heading">
+            <div>
+                <h2 class="section-title">Community Reviews & Replies</h2>
+                <p>Visitors can post with an account or stay anonymous.</p>
+            </div>
+            <button type="button" data-open-auth>Account</button>
+        </div>
+        <section class="card-list" data-community-feed></section>
+    </section>
+    <section class="compare-filter-bar" data-review-filters aria-label="Review categories"></section>
+    <section class="card-list" data-review-list></section>
+    <h2 class="subsection-title">External Review Sources</h2>
+    <section class="card-list" data-external-review-list></section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

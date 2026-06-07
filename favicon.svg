@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ReviewHub logo">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="0.55" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M16 17h32a5 5 0 0 1 5 5v18a5 5 0 0 1-5 5H32l-11 8v-8h-5a5 5 0 0 1-5-5V22a5 5 0 0 1 5-5Z" fill="#f8fafc"/>
+  <path d="m20 31 6.3 6.1L43.8 24" fill="none" stroke="#0f766e" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
